@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>June Promotion — Terms & Conditions | workbuddy</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="https://www.work-buddy.com/workFav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --wb-green: #1D9E75;
+      --wb-green-dark: #0F6E56;
+      --wb-green-deeper: #085041;
+      --wb-green-light: #E1F5EE;
+      --wb-green-mid: #9FE1CB;
+      --text-primary: #1a1a1a;
+      --text-secondary: #4a4a4a;
+      --text-muted: #7a7a7a;
+      --border: #e8e8e8;
+      --bg-page: #f7f7f5;
+      --bg-white: #ffffff;
+      --bg-subtle: #f2f2f0;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-page);
+      color: var(--text-primary);
+      min-height: 100vh;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--bg-white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 28px;
+      width: auto;
+    }
+
+    .header-badge {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--wb-green-dark);
+      background: var(--wb-green-light);
+      padding: 4px 12px;
+      border-radius: 99px;
+      border: 1px solid var(--wb-green-mid);
+    }
+
+    /* ── Promo banner ── */
+    .promo-banner {
+      background: var(--wb-green);
+      color: #fff;
+      text-align: center;
+      padding: 11px 24px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.15px;
+    }
+
+    .promo-banner svg {
+      vertical-align: -3px;
+      margin-right: 6px;
+    }
+
+    /* ── Page layout ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Intro ── */
+    .intro-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--wb-green-dark);
+      background: var(--wb-green-light);
+      border: 1px solid var(--wb-green-mid);
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 18px;
+    }
+
+    .page-title {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .page-subtitle {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      line-height: 1.65;
+      max-width: 560px;
+    }
+
+    /* ── T&C Card ── */
+    .tc-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .tc-card-header {
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border);
+      padding: 13px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tc-card-header svg {
+      flex-shrink: 0;
+      color: var(--wb-green);
+    }
+
+    .tc-body {
+      padding: 24px;
+      max-height: 380px;
+      overflow-y: auto;
+    }
+
+    .tc-body::-webkit-scrollbar { width: 4px; }
+    .tc-body::-webkit-scrollbar-track { background: transparent; }
+    .tc-body::-webkit-scrollbar-thumb {
+      background: #d0d0d0;
+      border-radius: 4px;
+    }
+
+    .tc-section {
+      margin-bottom: 22px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tc-section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .tc-section h3 {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .tc-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--wb-green-light);
+      color: var(--wb-green-dark);
+      font-size: 11px;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    .tc-section p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .tc-section ul {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .tc-section ul li { margin-bottom: 4px; }
+    .tc-section ul li:last-child { margin-bottom: 0; }
+
+    .tc-section a {
+      color: var(--wb-green);
+      text-decoration: none;
+    }
+    .tc-section a:hover { text-decoration: underline; }
+
+    /* Scroll hint */
+    .scroll-hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 10px;
+      border-top: 1px solid var(--border);
+      background: var(--bg-subtle);
+      transition: opacity 0.3s;
+    }
+
+    .scroll-hint svg { animation: bounce 1.4s ease-in-out infinite; }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(3px); }
+    }
+
+    /* ── Agreement section ── */
+    .agree-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      padding: 20px 22px;
+      margin-bottom: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .agree-card.checked {
+      border-color: var(--wb-green);
+      background: var(--wb-green-light);
+    }
+
+    .agree-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      cursor: pointer;
+    }
+
+    .agree-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: var(--wb-green);
+      cursor: pointer;
+    }
+
+    .agree-label {
+      font-size: 14px;
+      color: var(--text-primary);
+      line-height: 1.65;
+      cursor: pointer;
+    }
+
+    .agree-label strong { font-weight: 500; }
+
+    /* ── Checkout button ── */
+    .btn-checkout {
+      width: 100%;
+      padding: 15px 24px;
+      background: var(--wb-green);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-md);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+      letter-spacing: 0.1px;
+    }
+
+    .btn-checkout:not(:disabled):hover {
+      background: var(--wb-green-dark);
+      box-shadow: 0 4px 12px rgba(29, 158, 117, 0.3);
+    }
+
+    .btn-checkout:not(:disabled):active {
+      transform: scale(0.99);
+    }
+
+    .btn-checkout:disabled {
+      background: #d4d4d0;
+      color: #999;
+      cursor: not-allowed;
+    }
+
+    .btn-checkout svg { flex-shrink: 0; }
+
+    /* ── Validity note ── */
+    .validity-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* ── Success state ── */
+    .success-state {
+      display: none;
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--wb-green-light);
+      border: 1px solid var(--wb-green-mid);
+      border-radius: var(--radius-lg);
+      margin-top: 8px;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .check-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--wb-green);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+
+    .success-state h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--wb-green-deeper);
+      margin-bottom: 8px;
+    }
+
+    .success-state p {
+      font-size: 14px;
+      color: var(--wb-green-dark);
+      line-height: 1.65;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--bg-white);
+      border-top: 1px solid var(--border);
+      padding: 24px 32px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .site-footer a {
+      color: var(--wb-green);
+      text-decoration: none;
+    }
+    .site-footer a:hover { text-decoration: underline; }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .site-header { padding: 0 16px; }
+      .page-wrap { padding: 32px 16px 60px; }
+      .page-title { font-size: 22px; }
+      .tc-body { max-height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="logo" href="https://www.work-buddy.com">
+      <img src="https://www.work-buddy.com/assets/logo.svg" alt="workbuddy" />
+    </a>
+    <span class="header-badge">June 2026 Promotion</span>
+  </header>
+
+  <!-- Promo banner -->
+  <div class="promo-banner">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+    Exclusive member offer — valid until 30 June 2026
+  </div>
+
+  <!-- Main content -->
+  <main class="page-wrap">
+
+    <div class="intro-tag">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Promotion valid 1–30 June 2026
+    </div>
+
+    <h1 class="page-title">Promotion terms &amp; conditions</h1>
+    <p class="page-subtitle">Please read the following terms carefully before proceeding to checkout. You must agree to these conditions to access the promotional pricing.</p>
+
+    <!-- T&C card -->
+    <div class="tc-card">
+      <div class="tc-card-header">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Workbuddy June 2026 Promotion — Terms &amp; conditions
+      </div>
+
+      <div class="tc-body" id="tcBody">
+
+        <div class="tc-section">
+          <h3><span class="tc-num">1</span>Eligibility</h3>
+          <p>This promotion is available to new and existing workbuddy members who access this offer via the designated promotional link. Only one promotional plan may be redeemed per account. This offer is non-transferable and is intended for the named account holder only.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">2</span>Promotional offer</h3>
+          <p>The promotional discount or benefit applies to the plan specified on this page only. <em>[Insert specific offer details here — e.g. "20% off your first month of any Individual Plan" or "1 week free trial access"].</em> The promotional rate applies to the first billing cycle only, after which standard pricing will automatically resume.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">3</span>Validity period</h3>
+          <p>This promotion is valid from 1 June 2026 to 30 June 2026 (Singapore time, UTC+8). Redemption must be completed within this window. Orders placed or accounts activated outside of these dates will not qualify for the promotional pricing.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">4</span>Usage conditions</h3>
+          <ul>
+            <li>The promotion applies to coworking space access within the workbuddy Singapore network only, unless otherwise stated on the promotional landing page.</li>
+            <li>Hot desk bookings made under this promotion are subject to space availability and standard workbuddy booking rules.</li>
+            <li>Meeting room credits (if applicable) must be used within the same billing month and do not roll over to subsequent months.</li>
+            <li>This promotional offer cannot be combined with any other discount, voucher, referral credit, or offer.</li>
+            <li>Workbuddy reserves the right to limit the number of redemptions of this promotion at any time.</li>
+          </ul>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">5</span>Cancellation &amp; refunds</h3>
+          <p>Plans purchased under this promotion are subject to workbuddy's standard cancellation policy. No refunds will be issued for unused days within a current billing period. Cancellation requests must be submitted in writing to <a href="mailto:support@work-buddy.com">support@work-buddy.com</a> at least 7 days prior to the next billing date to take effect from the following cycle.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">6</span>Fair use</h3>
+          <p>Promotional memberships are strictly for the individual named account holder only. Sharing of access credentials, QR codes, or any other form of access with third parties is prohibited. Abuse of the promotional offer may result in immediate suspension of the account without refund.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">7</span>Variation &amp; termination</h3>
+          <p>Workbuddy reserves the right to modify, suspend, or terminate this promotion at any time without prior notice. In the event of early termination, members who have already completed checkout and been charged will not be affected for their current billing cycle.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">8</span>Governing law</h3>
+          <p>These terms are governed by and construed in accordance with the laws of Singapore. Any disputes arising in connection with this promotion shall be subject to the exclusive jurisdiction of the courts of Singapore.</p>
+        </div>
+
+        <div class="tc-section">
+          <h3><span class="tc-num">9</span>General workbuddy terms</h3>
+          <p>By accepting these promotional terms, you also confirm your acceptance of workbuddy's general <a href="https://www.work-buddy.com/term-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a> and <a href="https://www.work-buddy.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>, which continue to apply in full.</p>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" id="scrollHint">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        Scroll to read all terms
+      </div>
+    </div>
+
+    <!-- Agreement checkbox -->
+    <div class="agree-card" id="agreeCard">
+      <label class="agree-row" for="agreeCheck">
+        <input type="checkbox" id="agreeCheck" />
+        <span class="agree-label">I have read and agree to the <strong>workbuddy June 2026 Promotion Terms &amp; Conditions</strong>, and understand that the promotional rate applies to my first billing cycle only, after which standard pricing will apply.</span>
+      </label>
+    </div>
+
+    <!-- Checkout button -->
+    <button class="btn-checkout" id="checkoutBtn" disabled aria-disabled="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" id="btnIcon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      Agree &amp; proceed to checkout
+    </button>
+
+    <p class="validity-note">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Offer valid until 30 June 2026 · Singapore only
+    </p>
+
+    <!-- Success state (shown after agree + click) -->
+    <div class="success-state" id="successState" role="alert" aria-live="polite">
+      <div class="check-circle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Terms accepted — you're good to go!</h3>
+      <p>Redirecting you to checkout…<br />
+      <!-- ✏️  REPLACE the href below with your actual checkout URL -->
+      If you are not redirected automatically, <a href="https://www.work-buddy.com/coworking-plans">click here</a>.</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    &copy; 2026 workbuddy &nbsp;·&nbsp;
+    <a href="https://www.work-buddy.com/term-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a> &nbsp;·&nbsp;
+    <a href="https://www.work-buddy.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="mailto:support@work-buddy.com">support@work-buddy.com</a>
+  </footer>
+
+  <script>
+    const checkbox    = document.getElementById('agreeCheck');
+    const btn         = document.getElementById('checkoutBtn');
+    const agreeCard   = document.getElementById('agreeCard');
+    const tcBody      = document.getElementById('tcBody');
+    const scrollHint  = document.getElementById('scrollHint');
+    const successState = document.getElementById('successState');
+    const btnIcon     = document.getElementById('btnIcon');
+
+    // Checkbox toggle
+    checkbox.addEventListener('change', function () {
+      btn.disabled = !this.checked;
+      btn.setAttribute('aria-disabled', String(!this.checked));
+      agreeCard.classList.toggle('checked', this.checked);
+
+      if (this.checked) {
+        btnIcon.innerHTML = '<polyline points="20 6 9 17 4 12"/>';
+      } else {
+        btnIcon.innerHTML = '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>';
+      }
+    });
+
+    // Hide scroll hint when user reaches bottom
+    tcBody.addEventListener('scroll', function () {
+      const atBottom = this.scrollTop + this.clientHeight >= this.scrollHeight - 12;
+      scrollHint.style.opacity = atBottom ? '0' : '1';
+    });
+
+    // Checkout click
+    btn.addEventListener('click', function () {
+      if (!checkbox.checked) return;
+
+      // Show success
+      btn.style.display = 'none';
+      agreeCard.style.display = 'none';
+      document.querySelector('.validity-note').style.display = 'none';
+      successState.style.display = 'block';
+
+      // ✏️  REPLACE this URL with your actual checkout/plan page
+      const CHECKOUT_URL = 'https://www.work-buddy.com/coworking-plans';
+
+      setTimeout(function () {
+        window.location.href = CHECKOUT_URL;
+      }, 2500);
+    });
+  </script>
+
+</body>
+</html>
