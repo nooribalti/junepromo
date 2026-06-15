@@ -55,17 +55,8 @@
       z-index: 100;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-    }
-
-    .logo img {
-      height: 28px;
-      width: auto;
-    }
+    .logo { text-decoration: none; display: flex; align-items: center; }
+    .logo img { height: 32px; width: auto; }
 
     .header-badge {
       font-size: 12px;
@@ -163,15 +154,6 @@
 
     .tc-body {
       padding: 24px;
-      max-height: 380px;
-      overflow-y: auto;
-    }
-
-    .tc-body::-webkit-scrollbar { width: 4px; }
-    .tc-body::-webkit-scrollbar-track { background: transparent; }
-    .tc-body::-webkit-scrollbar-thumb {
-      background: #d0d0d0;
-      border-radius: 4px;
     }
 
     .tc-section {
@@ -233,26 +215,7 @@
     }
     .tc-section a:hover { text-decoration: underline; }
 
-    /* Scroll hint */
-    .scroll-hint {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      font-size: 12px;
-      color: var(--text-muted);
-      padding: 10px;
-      border-top: 1px solid var(--border);
-      background: var(--bg-subtle);
-      transition: opacity 0.3s;
-    }
 
-    .scroll-hint svg { animation: bounce 1.4s ease-in-out infinite; }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(3px); }
-    }
 
     /* ── App CTA ── */
     .app-cta {
@@ -362,7 +325,7 @@
       .site-header { padding: 0 16px; }
       .page-wrap { padding: 32px 16px 60px; }
       .page-title { font-size: 22px; }
-      .tc-body { max-height: 300px; }
+
     }
   </style>
 </head>
@@ -371,7 +334,7 @@
   <!-- Header -->
   <header class="site-header">
     <a class="logo" href="https://www.work-buddy.com">
-      <img src="https://www.work-buddy.com/assets/logo.svg" alt="workbuddy" />
+      <img src="https://www.work-buddy.com/assets/Footer-Logo.png" alt="workbuddy" />
     </a>
     <span class="header-badge">JUNE30 &mdash; 30% off first month</span>
   </header>
@@ -468,10 +431,7 @@
 
       </div>
 
-      <div class="scroll-hint" id="scrollHint">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        Scroll to read all terms
-      </div>
+
     </div>
 
     <p class="validity-note">
@@ -490,13 +450,7 @@
   </footer>
 
   <script>
-    // Scroll hint
-    const tcBody     = document.getElementById('tcBody');
-    const scrollHint = document.getElementById('scrollHint');
-    tcBody.addEventListener('scroll', function () {
-      const atBottom = this.scrollTop + this.clientHeight >= this.scrollHeight - 12;
-      scrollHint.style.opacity = atBottom ? '0' : '1';
-    });
+
 
 
   </script>
