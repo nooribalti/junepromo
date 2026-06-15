@@ -254,85 +254,82 @@
       50% { transform: translateY(3px); }
     }
 
-    /* ── Agreement section ── */
-    .agree-card {
+    /* ── App CTA ── */
+    .app-cta {
       background: var(--bg-white);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow-card);
-      padding: 20px 22px;
-      margin-bottom: 20px;
-      transition: border-color 0.2s;
+      padding: 24px;
+      margin-top: 20px;
+      text-align: center;
     }
 
-    .agree-card.checked {
-      border-color: var(--wb-green);
-      background: var(--wb-green-light);
-    }
-
-    .agree-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 13px;
-      cursor: pointer;
-    }
-
-    .agree-row input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      margin-top: 2px;
-      flex-shrink: 0;
-      accent-color: var(--wb-green);
-      cursor: pointer;
-    }
-
-    .agree-label {
-      font-size: 14px;
-      color: var(--text-primary);
-      line-height: 1.65;
-      cursor: pointer;
-    }
-
-    .agree-label strong { font-weight: 500; }
-
-    /* ── Checkout button ── */
-    .btn-checkout {
-      width: 100%;
-      padding: 15px 24px;
-      background: var(--wb-green);
-      color: #fff;
-      border: none;
-      border-radius: var(--radius-md);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 15px;
+    .app-cta h3 {
+      font-size: 16px;
       font-weight: 500;
-      cursor: pointer;
-      display: flex;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .app-cta p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .promo-code-pill {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
-      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
-      letter-spacing: 0.1px;
+      background: var(--wb-green-light);
+      border: 1.5px dashed var(--wb-green);
+      border-radius: var(--radius-md);
+      padding: 10px 20px;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--wb-green-dark);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: background 0.15s;
     }
 
-    .btn-checkout:not(:disabled):hover {
-      background: var(--wb-green-dark);
-      box-shadow: 0 4px 12px rgba(29, 158, 117, 0.3);
+    .promo-code-pill:hover { background: #c8eee0; }
+
+    .copy-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      display: block;
     }
 
-    .btn-checkout:not(:disabled):active {
-      transform: scale(0.99);
+    .copy-hint.copied { color: var(--wb-green); }
+
+    .store-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    .btn-checkout:disabled {
-      background: #d4d4d0;
-      color: #999;
-      cursor: not-allowed;
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
     }
 
-    .btn-checkout svg { flex-shrink: 0; }
+    .store-btn:hover { background: #333; }
 
-    /* ── Validity note ── */
     .validity-note {
       display: flex;
       align-items: center;
@@ -342,48 +339,6 @@
       color: var(--text-muted);
       margin-top: 16px;
       text-align: center;
-    }
-
-    /* ── Success state ── */
-    .success-state {
-      display: none;
-      text-align: center;
-      padding: 40px 24px;
-      background: var(--wb-green-light);
-      border: 1px solid var(--wb-green-mid);
-      border-radius: var(--radius-lg);
-      margin-top: 8px;
-      animation: fadeIn 0.4s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .check-circle {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--wb-green);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 18px;
-    }
-
-    .success-state h3 {
-      font-size: 18px;
-      font-weight: 500;
-      color: var(--wb-green-deeper);
-      margin-bottom: 8px;
-    }
-
-    .success-state p {
-      font-size: 14px;
-      color: var(--wb-green-dark);
-      line-height: 1.65;
     }
 
     /* ── Footer ── */
@@ -519,35 +474,10 @@
       </div>
     </div>
 
-    <!-- Agreement checkbox -->
-    <div class="agree-card" id="agreeCard">
-      <label class="agree-row" for="agreeCheck">
-        <input type="checkbox" id="agreeCheck" />
-        <span class="agree-label">I have read and agree to the <strong>workbuddy JUNE30 Promotion Terms &amp; Conditions</strong>. I confirm I am a new workbuddy member and understand the 30% discount applies to my first month only, after which standard pricing will apply.</span>
-      </label>
-    </div>
-
-    <!-- Checkout button -->
-    <button class="btn-checkout" id="checkoutBtn" disabled aria-disabled="true">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" id="btnIcon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-      Agree &amp; proceed to checkout
-    </button>
-
     <p class="validity-note">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       Offer valid until 30 June 2026 · New sign-ups only · Excludes Day Pass
     </p>
-
-    <!-- Success state (shown after agree + click) -->
-    <div class="success-state" id="successState" role="alert" aria-live="polite">
-      <div class="check-circle">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <h3>Terms accepted — you're good to go!</h3>
-      <p>Redirecting you to checkout…<br />
-      <!-- ✏️  REPLACE the href below with your actual checkout URL -->
-      If you are not redirected automatically, <a href="https://www.work-buddy.com/coworking-plans">click here</a>.</p>
-    </div>
 
   </main>
 
@@ -560,50 +490,15 @@
   </footer>
 
   <script>
-    const checkbox    = document.getElementById('agreeCheck');
-    const btn         = document.getElementById('checkoutBtn');
-    const agreeCard   = document.getElementById('agreeCard');
-    const tcBody      = document.getElementById('tcBody');
-    const scrollHint  = document.getElementById('scrollHint');
-    const successState = document.getElementById('successState');
-    const btnIcon     = document.getElementById('btnIcon');
-
-    // Checkbox toggle
-    checkbox.addEventListener('change', function () {
-      btn.disabled = !this.checked;
-      btn.setAttribute('aria-disabled', String(!this.checked));
-      agreeCard.classList.toggle('checked', this.checked);
-
-      if (this.checked) {
-        btnIcon.innerHTML = '<polyline points="20 6 9 17 4 12"/>';
-      } else {
-        btnIcon.innerHTML = '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>';
-      }
-    });
-
-    // Hide scroll hint when user reaches bottom
+    // Scroll hint
+    const tcBody     = document.getElementById('tcBody');
+    const scrollHint = document.getElementById('scrollHint');
     tcBody.addEventListener('scroll', function () {
       const atBottom = this.scrollTop + this.clientHeight >= this.scrollHeight - 12;
       scrollHint.style.opacity = atBottom ? '0' : '1';
     });
 
-    // Checkout click
-    btn.addEventListener('click', function () {
-      if (!checkbox.checked) return;
 
-      // Show success
-      btn.style.display = 'none';
-      agreeCard.style.display = 'none';
-      document.querySelector('.validity-note').style.display = 'none';
-      successState.style.display = 'block';
-
-      // ✏️  REPLACE this URL with your actual checkout/plan page
-      const CHECKOUT_URL = 'https://www.work-buddy.com/coworking-plans';
-
-      setTimeout(function () {
-        window.location.href = CHECKOUT_URL;
-      }, 2500);
-    });
   </script>
 
 </body>
